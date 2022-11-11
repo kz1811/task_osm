@@ -1,0 +1,218 @@
+{
+  "tests": [
+    {
+      "test_data": {
+        "q": "Russia Zelenograd",
+        "format": "json"
+      },
+      "expected": [
+          {
+            "place_id": 298130403,
+            "display_name": "Зеленоград, Москва, Центральный федеральный округ, Россия",
+            "class": "place",
+            "type": "city",
+            "lat": "55.9964233",
+            "lon": "37.198534"
+          }
+        ]
+    },
+    {
+      "test_data": {
+        "street":"Pushkina",
+        "city": "Moscow",
+        "country": "Russia",
+        "accept-language": "en",
+        "format": "jsonv2"
+      },
+      "expected": [
+        {
+            "place_id": 118483068,
+            "display_name": "Pushkina Street, Zvenigorod, Одинцовский городской округ, Moscow Oblast, Central Federal District, 143180, Russia",
+            "category": "highway",
+            "type": "residential",
+            "lat": "55.7380907",
+            "lon": "36.8622274"},
+        {
+            "place_id": 215967707,
+            "display_name": "Парковая улица, Zvenigorod, Одинцовский городской округ, Moscow Oblast, Central Federal District, 143180, Russia",
+            "category": "highway",
+            "type": "residential",
+            "lat": "55.7366859",
+            "lon": "36.8685566"
+        },
+        {
+            "place_id": 114377680,
+            "display_name": "Pushkin Street, Воронок, Shchyolkovo, Shchyolkovsky District, Moscow Oblast, Central Federal District, 141102, Russia",
+            "category": "highway",
+            "type": "tertiary",
+            "lat": "55.923806",
+            "lon": "37.9791824"
+        }
+      ]
+    },
+    {
+      "test_data": {
+        "q": "Russia Zelenograd 1432",
+        "format": "xml"
+      },
+      "expected": [
+          {
+            "place_id": 298130403,
+            "display_name": "Зеленоград, Москва, Центральный федеральный округ, Россия",
+            "class": "place",
+            "type": "city",
+            "lat": "55.9964233",
+            "lon": "37.198534"
+          }
+        ]
+    },
+    {
+      "test_data": {
+        "street":"Pushkina",
+        "city": "Moscow",
+        "country": "Russia",
+        "accept-language": "en",
+        "format": "xml"
+      },
+      "expected": [
+        {
+            "place_id": 118483068,
+            "display_name": "Pushkina Street, Zvenigorod, Одинцовский городской округ, Moscow Oblast, Central Federal District, 143180, Russia",
+            "class": "highway",
+            "type": "residential",
+            "lat": "55.7380907",
+            "lon": "36.8622274"},
+        {
+            "place_id": 215967707,
+            "display_name": "Парковая улица, Zvenigorod, Одинцовский городской округ, Moscow Oblast, Central Federal District, 143180, Russia",
+            "class": "highway",
+            "type": "residential",
+            "lat": "55.7366859",
+            "lon": "36.8685566"
+        },
+        {
+            "place_id": 114377680,
+            "display_name": "Pushkin Street, Воронок, Shchyolkovo, Shchyolkovsky District, Moscow Oblast, Central Federal District, 141102, Russia",
+            "class": "highway",
+            "type": "tertiary",
+            "lat": "55.923806",
+            "lon": "37.9791824"
+        }
+      ]
+    },
+    {
+      "test_data": {
+        "street":"Pushkina",
+        "city": "Moscow",
+        "country": "Russia",
+        "accept-language": "en",
+        "format": "xml",
+        "limit": "2"
+      },
+      "expected": [
+        {
+            "place_id": 118483068,
+            "display_name": "Pushkina Street, Zvenigorod, Одинцовский городской округ, Moscow Oblast, Central Federal District, 143180, Russia",
+            "class": "highway",
+            "type": "residential",
+            "lat": "55.7380907",
+            "lon": "36.8622274"
+        },
+        {
+            "place_id": 215967707,
+            "display_name": "Парковая улица, Zvenigorod, Одинцовский городской округ, Moscow Oblast, Central Federal District, 143180, Russia",
+            "class": "highway",
+            "type": "residential",
+            "lat": "55.7366859",
+            "lon": "36.8685566"
+        }
+      ]
+    },
+    {
+      "test_data": {
+        "q": "Russia Zelenograd 1432",
+        "format": "json",
+        "addressdetails": "1"
+      },
+      "expected": [
+          {
+            "place_id": 298130403,
+            "display_name": "Зеленоград, Москва, Центральный федеральный округ, Россия",
+            "class": "place",
+            "type": "city",
+            "lat": "55.9964233",
+            "lon": "37.198534",
+            "address": {
+              "city": "Зеленоград",
+              "state": "Москва",
+              "ISO3166-2-lvl4": "RU-MOW",
+              "region": "Центральный федеральный округ",
+              "country": "Россия",
+              "country_code": "ru"
+            }
+          }
+        ]
+    },
+    {
+      "test_data": {
+        "q": "Russia Rudnya",
+        "format": "json",
+        "extratags": "1"
+      },
+      "expected": [
+          {
+            "place_id": 298139706,
+            "display_name": "Руднянское городское поселение, Руднянский район, Смоленская область, Центральный федеральный округ, 216790, Россия",
+            "class": "boundary",
+            "type": "administrative",
+            "lat": "54.9471458",
+            "lon": "31.0906286",
+            "extratags": {
+              "wikidata": "Q193388",
+              "wikipedia": "ru:Рудня (город)",
+              "population": "9652",
+              "linked_place": "town",
+              "official_status": "ru:городское поселение",
+              "population:date": "2015-01-01"
+            }
+          }
+        ]
+    },
+    {
+      "test_data": {
+        "q": "Paris",
+        "format": "json",
+        "countrycodes": "by"
+      },
+      "expected": [
+          {
+            "place_id": 299485407,
+            "display_name": "Париж, Козловщинский сельский Совет, Поставский район, Витебская область, Беларусь",
+            "class": "boundary",
+            "type": "administrative",
+            "lat": "55.1540128",
+            "lon": "27.3818894"
+          }
+        ]
+    },
+    {
+      "test_data": {
+        "county": "Los Angeles",
+        "format": "json",
+        "accept-language": "en"
+      },
+      "expected": [
+          {
+            "place_id": 297999671,
+            "lat": "34.3155072",
+            "lon": "-118.209681",
+            "display_name": "Los Angeles County, CAL Fire Southern Region, California, United States",
+            "class": "boundary",
+            "type": "administrative"
+          }
+        ]
+    }
+  ]
+}
+
+

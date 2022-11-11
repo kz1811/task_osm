@@ -1,0 +1,6 @@
+{
+  "url_api": "https://nominatim.openstreetmap.org/",
+  "search_test_data": "tests_project/files/search_test_data",
+  "reverse_test_data": "tests_project/files/reverse_test_data",
+  "identified": "true"
+}
